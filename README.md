@@ -1,8 +1,6 @@
 # Upload Files
 This is a cool way to handle files and submit them to any backend using only JS. Which consists of 3 important functions: upload, getFileMD5 and hexToBase64.\
-<br/>
-## upload 
-This is the main function which calls the other 2, to process files encryption and convert from heex to base 64 eventually. Also, this function would be the one that is called on the form submission. 
+**upload** is the main function which calls the other 2, to process files encryption and convert from heex to base 64 eventually. Also, this function would be the one that is called on the form submission. 
 This function does heavy use of [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 ### Process of the upload
 Files passed are processed in a first Promise, using the [all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) static method (let's called 1st Promise.all) which expects an array of values, each file does the following cycle:
